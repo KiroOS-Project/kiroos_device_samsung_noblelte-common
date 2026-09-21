@@ -178,6 +178,7 @@ endif
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/noblelte-common/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/universal7420-common/kiroos/sepolicy
 
 # Seccomp filters
 BOARD_SECCOMP_POLICY := device/samsung/noblelte-common/seccomp

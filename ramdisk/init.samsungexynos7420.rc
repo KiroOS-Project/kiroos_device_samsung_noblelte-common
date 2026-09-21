@@ -5,6 +5,8 @@ import init.carrier.rc
 import init.samsung.rc
 import init.power.rc
 import init.rilcommon.rc
+# KiroOS (shared by the S6 family): must stay after mount_all, see the file
+import /init.kiroos.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
