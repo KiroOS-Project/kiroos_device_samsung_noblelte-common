@@ -12,9 +12,9 @@
 /dev/block/platform/15570000.ufs/by-name/USERDATA	/data		ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic	wait,check,encryptable=footer,length=-16384
 /dev/block/platform/15570000.ufs/by-name/CPEFS		/cpefs		ext4	ro,errors=panic,noload										wait,check
 
-# KiroOS: 2 GB compressed swap in RAM (zram, LZO) for the 4 GB S6 edge+ / Note5,
-# enabled by swapon_all in init.kiroos.rc
-/dev/block/zram0	none		swap	defaults	zramsize=2147483648
+# KiroOS: 1.5 GB compressed swap in RAM (zram, LZO) for the 4 GB S6 edge+ / Note5 (Beta 4:
+# the same as the S6, less CPU spent compressing), enabled by swapon_all in init.kiroos.rc
+/dev/block/zram0	none		swap	defaults	zramsize=1610612736
 
 # Updater service
 /dev/block/platform/15570000.ufs/by-name/OTA		/misc		emmc	defaults													defaults
