@@ -249,4 +249,7 @@
 
     <!-- For performance and storage reasons, limit the number of fingerprints per user -->
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
+    <!-- KiroOS Beta 4.1: 20 of 30 media steps (ro.config.media_vol_steps), the stock 10 of 15 -->
+    <integer name="config_safe_media_volume_index">20</integer>
+
 </resources>
